@@ -1,0 +1,26 @@
+@import '../styles/variables';
+$breakpoint-mobile: 767px; // Adjust as needed for your design
+
+.service {
+    margin-top: 0px;
+    background-color: $lightgrey; // Grey background color
+    height: 1000px; // Height of the grey background
+
+    h1 {
+        font-family: $heading-font-family;
+        font-size: $size64;
+        padding-top: 100px;
+        text-align: center;
+        /* margin: 0; */
+    }
+    
+    @media (max-width: $breakpoint-mobile) {
+        height: 800px; // Adjust height for mobile devices
+        padding: 20px; // Adjust padding for mobile devices
+
+        h1 {
+            font-size: $size48; // Adjust font size for mobile devices
+            padding-top: 50px; // Adjust padding for mobile devices
+        }
+    }
+}

@@ -1,10 +1,17 @@
-import React from 'react'
-import Navbar from './Components/Navbar'
-
+import React from 'react';
+import Navbar from './Components/Navbar';
+import Header from './Components/Header';
+import SubHeader from './Components/SubHeader';
+import Service from './Components/Service';
 const App = () => {
   return (
-    <div><Navbar/></div>
-  )
-}
+    <div>
+      <Navbar />
+      <Header />
+      <SubHeader />
+      <Service />
+    </div>
+  );
+};
 
-export default App
+export default App;

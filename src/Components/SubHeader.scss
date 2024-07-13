@@ -1,0 +1,59 @@
+@import '../styles/variables';
+$breakpoint-mobile: 767px; // Adjust as needed for your design
+
+
+.darkgrey90-background {
+    margin-top: 50px;
+    background-color:$darkgrey90; // Grey background color
+    height: 200px; // Height of the grey background
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 150px; /* Add padding to create more space around content */
+
+    h3{
+        font-size: $size24;
+        margin-top: 10px; 
+        font-family: $body-font-family;
+        color: $white;
+        font-weight: $body-font-weight;
+        text-align: center; 
+        margin: 0; /* Remove default margin */
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 80px; // Adjust margin-top for smaller screens
+        padding: 100px; // Adjust padding for smaller screens
+
+        h3 {
+            font-size: $size20; // Adjust font size for smaller screens
+        }
+    }
+
+    @media (max-width: 611px) {
+        margin-top: 50px; // Adjust margin-top for smaller screens
+        padding: 100px; // Adjust padding for smaller screens
+
+        h3 {
+            font-size: $size16; // Adjust font size for smaller screens
+        }
+    }
+
+    @media (max-width: 460px) {
+        margin-top: 30px; // Adjust margin-top for smaller screens
+        padding: 100px; // Adjust padding for smaller screens
+
+        h3 {
+            font-size: $size14; // Adjust font size for smaller screens
+        }
+    }
+
+    @media (max-width: 400px) {
+        padding: 10px; // Further adjust padding for smallest screens
+
+        h3 {
+            font-size: $size12; // Adjust font size for smallest screens
+        }
+    }
+}
+

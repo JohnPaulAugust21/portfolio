@@ -1,0 +1,105 @@
+@import '../styles/variables';
+$breakpoint-mobile: 767px; // Adjust as needed for your design
+
+.image {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* Ensures the image doesn't overflow its container */
+  height: 450px; /* Adjust as needed */
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+  }
+}
+
+.circle {
+  position: absolute;
+  bottom:-120px; /* Adjust vertical positioning as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px; /* Adjust size of the circle */
+  height: 250px; /* Adjust size of the circle */
+  background-color: red; /* Background color for the circle */
+  border-radius: 50%; /* Make it circular */
+  overflow: hidden; /* Ensure the profile picture fits within the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the profile picture covers the entire circle */
+  }
+}
+
+@media (max-width: 767px) {
+  .image {
+    height: auto; /* Allow the height to adjust based on content */
+  }
+  
+  .circle {
+    bottom:-70px;
+    width: 150px; /* Adjust size of the circle for smaller screens */
+    height: 150px; /* Adjust size of the circle for smaller screens */
+    object-fit: cover; 
+  }
+}
+
+
+
+  .name {
+    text-align: center;
+    margin-top: 130px; // Adjust spacing between circle and name
+
+    
+  
+    h1 {
+      font-size: $size64;
+      margin-top: 10px; 
+      font-family: $heading-font-family;
+    }
+
+    h2 {
+        font-size: $size48;
+        margin-top: 10px; 
+        font-family: $heading-font-family;
+        color: $darkgrey;
+      }
+
+      img {
+        margin-top: 30px;
+        width: 50px; /* Adjust image size as needed */
+        height: auto;
+        margin-right: 15px; /* Adjust spacing between images */
+      }
+      @media (max-width: 767px) {
+        margin-top: 80px; // Adjust margin-top for smaller screens
+    
+        h1 {
+          font-size: 40px; // Adjust font size for smaller screens
+        }
+    
+        h2 {
+          font-size: 30px; // Adjust font size for smaller screens
+        }
+        img {
+          width: 30px; /* Adjust image size for smaller screens */
+          margin-right: 10px; /* Adjust spacing between images */
+        }
+      }
+
+
+  }
+
+  
+
+
+  //   .grey-background {
+  //   margin-top: 50px;
+  //   background-color: $lightgrey; // Grey background color
+  //   height: 1000px; // Height of the grey background
+  // }
+  
