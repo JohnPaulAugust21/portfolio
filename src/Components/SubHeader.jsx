@@ -3,8 +3,8 @@ import "./SubHeader.scss";
 
 function SubHeader() {
   return (
-    <subheader>
-      <div class="darkgrey90-background">
+    <div>
+      <div class="summary">
         <h2>
           Adaptability and performance-driven, excellent at applying technical
           skills to provide high-quality results efficiently. Strong
@@ -14,7 +14,7 @@ function SubHeader() {
           improve customer experience.
         </h2>
       </div>
-    </subheader>
+    </div>
   );
 }
 
