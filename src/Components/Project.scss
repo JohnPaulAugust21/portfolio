@@ -1,28 +1,21 @@
 @import "../styles/variables";
 
 #projects {
+  padding-top: 50px;
   @media (max-width: $mobileSMax) {
     padding-top: 500px;
-  }
-
-  @media (min-width: 479px) {
-    padding-top: 600px;
   }
 
   @media (min-width: $mobileMMin) and (max-width: $breakpoint-mobile) {
     padding-top: 500px;
   }
 
-  @media (min-width: $mobileLMin) and (max-width: $mobileLMax) {
-    padding-top: 50px;
+  @media (min-width: 640px) and (max-width: 766px) {
+    padding-top: 200px;
   }
 
-  @media (min-width: $tabletMin) and (max-width: $tabletMax) {
-    font-size: $size18;
-  }
-
-  @media (min-width: $laptop) {
-    font-size: $size20;
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding-top: 100px;
   }
 }
 
@@ -41,20 +34,56 @@
     @media (min-width: 768px) {
       grid-template-columns: repeat(3, 1fr);
     }
-    
   }
 
   margin-top: 0px;
   background-color: $lightgrey; // Grey background color
   height: 850px; // Height of the grey background
-  
 
   h1 {
     font-family: $heading-font-family;
     font-size: $size64;
     padding-top: 100px;
     text-align: center;
-    /* margin: 0; */
+    @media (min-width: $mobileSMax) {
+      padding-top: 50px;
+      font-size: $size18;
+    }
+
+    @media (max-width: $mobileSMax) {
+      padding-top: 50px;
+      font-size: $size18;
+    }
+
+    @media (min-width: $breakpoint-mobile) {
+      padding-top: 50px;
+      font-size: $size20;
+    }
+
+    @media (min-width: $mobileMMin) and (max-width: $breakpoint-mobile) {
+      padding-top: 50px;
+      font-size: $size20;
+    }
+
+    @media (min-width: $mobileLMax) {
+      padding-top: 100px;
+      font-size: $size24;
+    }
+
+    @media (min-width: $mobileLMin) and (max-width: $mobileLMax) {
+      padding-top: 100px;
+      font-size: $size24;
+    }
+
+    @media (min-width: $tabletMin) and (max-width: $tabletMax) {
+      padding-top: 100px;
+      font-size: $size30;
+    }
+
+    @media (min-width: $laptop) {
+      padding-top: 100px;
+      font-size: $size36;
+    }
   }
 
   .project-item {
@@ -92,6 +121,28 @@
         font-size: 1.5rem;
         font-weight: bold;
         color: $black;
+        @media (min-width: $mobileSMax) {
+          font-size: $size14;
+        }
+        @media (max-width: $mobileSMax) {
+          font-size: $size14;
+        }
+
+        @media (min-width: $mobileMMin) and (max-width: $breakpoint-mobile) {
+          font-size: $size16;
+        }
+
+        @media (min-width: $mobileLMin) and (max-width: $mobileLMax) {
+          font-size: $size18;
+        }
+
+        @media (min-width: $tabletMin) and (max-width: $tabletMax) {
+          font-size: $size18;
+        }
+
+        @media (min-width: $laptop) {
+          font-size: $size20;
+        }
       }
     }
   }
