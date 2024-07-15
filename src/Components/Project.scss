@@ -1,75 +1,98 @@
-@import '../styles/variables';
+@import "../styles/variables";
+
+#projects {
+  @media (max-width: $mobileSMax) {
+    padding-top: 500px;
+  }
+
+  @media (min-width: 479px) {
+    padding-top: 600px;
+  }
+
+  @media (min-width: $mobileMMin) and (max-width: $breakpoint-mobile) {
+    padding-top: 500px;
+  }
+
+  @media (min-width: $mobileLMin) and (max-width: $mobileLMax) {
+    padding-top: 50px;
+  }
+
+  @media (min-width: $tabletMin) and (max-width: $tabletMax) {
+    font-size: $size18;
+  }
+
+  @media (min-width: $laptop) {
+    font-size: $size20;
+  }
+}
 
 .project {
-    margin: 4rem 0;
-    .grid-container {
-        margin-top: 100px;
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 2rem;
+  margin: 4rem 0;
+  .grid-container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+  }
+
+  margin-top: 0px;
+  background-color: $lightgrey; // Grey background color
+  height: 850px; // Height of the grey background
   
-      @media (min-width: 640px) {
-        grid-template-columns: repeat(2, 1fr);
-      }
-  
-      @media (min-width: 768px) {
-        grid-template-columns: repeat(3, 1fr);
+
+  h1 {
+    font-family: $heading-font-family;
+    font-size: $size64;
+    padding-top: 100px;
+    text-align: center;
+    /* margin: 0; */
+  }
+
+  .project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .img-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .img-shadow2 {
+      max-width: 150px; // Adjust this value to make the images smaller
+      background-color: $white; // Background color instead of box-shadow
+      border-radius: 0px; // Optional: add border-radius for rounded corners
+      overflow: hidden; // Optional: hide any overflow content
+
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
       }
     }
 
-    margin-top: 0px;
-    background-color: $lightgrey; // Grey background color
-    height: 850px; // Height of the grey background
-
-    h1 {
-        font-family: $heading-font-family;
-        font-size: $size64;
-        padding-top: 100px;
-        text-align: center;
-        /* margin: 0; */
-    }
-  
-    .project-item {
+    .project-info {
+      margin-top: 1rem;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
-  
-      .img-container {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-      }
-  
-      .img-shadow2 {
-        max-width: 150px; // Adjust this value to make the images smaller
-        background-color: $white; // Background color instead of box-shadow
-        border-radius: 0px; // Optional: add border-radius for rounded corners
-        overflow: hidden; // Optional: hide any overflow content
-  
-        transition: transform 0.3s ease;
-  
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-  
-      .project-info {
-        margin-top: 1rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-  
-        h2 {
-          font-size: 1.5rem;
-          font-weight: bold;
-          color: $black;
-        }
-  
-    
+      gap: 0.5rem;
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $black;
       }
     }
-
-
-
+  }
 }

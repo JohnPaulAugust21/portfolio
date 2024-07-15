@@ -1,77 +1,135 @@
-@import '../styles/variables';
+@import "../styles/variables";
 
 .service {
-    margin: 4rem 0;
-    .grid-container {
-        margin-top: 100px;
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 2rem;
-  
-      @media (min-width: 640px) {
-        grid-template-columns: repeat(2, 1fr);
-      }
-  
-      @media (min-width: 768px) {
-        grid-template-columns: repeat(3, 1fr);
+  margin: 4rem 0;
+  .grid-container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  margin-top: 0px;
+  background-color: $white; // Grey background color
+  height: 650px; // Height of the grey background
+
+  h1 {
+    font-family: $heading-font-family;
+    text-align: center;
+
+    @media (max-width: $mobileSMax) {
+      padding-top: 50px;
+      font-size: $size18;
+    }
+
+    @media (min-width: $mobileMMin) and (max-width: $breakpoint-mobile) {
+      font-size: $size20;
+    }
+
+    @media (min-width: $mobileLMin) and (max-width: $mobileLMax) {
+      padding-top: 100px;
+      font-size: $size24;
+    }
+
+    @media (min-width: $tabletMin) and (max-width: $tabletMax) {
+      padding-top: 100px;
+      font-size: $size30;
+    }
+
+    @media (min-width: $laptop) {
+      padding-top: 100px;
+      font-size: $size36;
+    }
+  }
+
+  .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .img-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .img-shadow2 {
+      width: 200px; /* Fixed width */
+      height: 200px; /* Fixed height */
+      object-fit: cover; /* Ensure the image covers the area */
+      background-color: $lightgrey; // Background color instead of box-shadow
+      border-radius: 0px; // Optional: add border-radius for rounded corners
+      overflow: hidden; // Optional: hide any overflow content
+
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
       }
     }
 
-    margin-top: 0px;
-    background-color: $white; // Grey background color
-    height: 650px; // Height of the grey background
-
-    h1 {
-        font-family: $heading-font-family;
-        font-size: $size64;
-        padding-top: 100px;
-        text-align: center;
-        /* margin: 0; */
-    }
-  
-    .service-item {
+    .service-info {
+      margin-top: 1rem;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
-  
-      .img-container {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-      }
-  
-      .img-shadow2 {
-        width: 200px; /* Fixed width */
-        height: 200px; /* Fixed height */
-        object-fit: cover; /* Ensure the image covers the area */
-        background-color: $lightgrey; // Background color instead of box-shadow
-        border-radius: 0px; // Optional: add border-radius for rounded corners
-        overflow: hidden; // Optional: hide any overflow content
-  
-        transition: transform 0.3s ease;
-  
-        &:hover {
-          transform: scale(1.1);
+      gap: 0.5rem;
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--primary-color);
+        @media (max-width: $mobileSMax) {
+          font-size: $size18;
+        }
+
+        @media (min-width: $mobileMMin) and (max-width: $breakpoint-mobile) {
+          font-size: $size20;
+        }
+
+        @media (min-width: $mobileLMin) and (max-width: $mobileLMax) {
+          font-size: $size24;
+        }
+
+        @media (min-width: $tabletMin) and (max-width: $tabletMax) {
+          font-size: $size30;
+        }
+
+        @media (min-width: $laptop) {
+          font-size: $size36;
         }
       }
-  
-      .service-info {
-        margin-top: 1rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-  
-        h2 {
-          font-size: 1.5rem;
-          font-weight: bold;
-          color: var(--primary-color);
+
+      h3 {
+        font-size: 1.2rem;
+        @media (max-width: $mobileSMax) {
+          font-size: $size14;
         }
-  
-        h3 {
-          font-size: 1.2rem;
+
+        @media (min-width: $mobileMMin) and (max-width: $breakpoint-mobile) {
+          font-size: $size16;
+        }
+
+        @media (min-width: $mobileLMin) and (max-width: $mobileLMax) {
+          font-size: $size18;
+        }
+
+        @media (min-width: $tabletMin) and (max-width: $tabletMax) {
+          font-size: $size18;
+        }
+
+        @media (min-width: $laptop) {
+          font-size: $size20;
         }
       }
     }
   }
-  
+}
