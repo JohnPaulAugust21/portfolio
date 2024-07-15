@@ -19,8 +19,10 @@
 
   margin-top: 0px;
   background-color: $white; // Grey background color
-  height: 650px; // Height of the grey background
-
+  height: 550px; // Height of the grey background
+  @media (min-width: 320px) {
+    height: 550px;
+  }
   h1 {
     font-family: $heading-font-family;
     text-align: center;
@@ -61,7 +63,7 @@
     }
 
     @media (min-width: $laptop) {
-      padding-top: 100px;
+      padding-top: 50px;
       font-size: $size36;
     }
   }

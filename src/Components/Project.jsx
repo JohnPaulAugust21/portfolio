@@ -1,6 +1,5 @@
 import React from "react";
 import "./Project.scss";
-import linkedin from "/linkedin.png";
 import sportscomplex from "/sports-logo.png";
 import phoneshop from "/phoneshop.png";
 import barbrandy from "/barbrandy.png";
