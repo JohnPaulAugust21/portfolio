@@ -1,6 +1,4 @@
-@import '../styles/variables';
-
-$breakpoint-mobile: 767px; // Adjust as needed for your design
+@import "../styles/variables";
 
 * {
   margin: 0;
@@ -21,7 +19,7 @@ nav {
   .logo {
     float: left;
     height: 75px;
-    
+
     img {
       height: 100%; // Ensure logo fills the height of the nav bar
       width: auto; // Allow width to adjust based on image dimensions
@@ -37,7 +35,7 @@ nav {
     li {
       list-style: none;
       margin-left: 20px; // Adjust spacing between menu items for smaller screens
-      
+
       .active {
         color: $darkgrey;
       }
@@ -49,6 +47,7 @@ nav {
         text-decoration: none;
         font-size: 18px;
         padding: 0px 10px; // Adjust padding for smaller screens
+        cursor: pointer; // Add pointer cursor style
 
         &:hover {
           color: $darkgrey;
@@ -59,47 +58,38 @@ nav {
 
   @media (max-width: $breakpoint-mobile) {
     padding: 0px 10px; // Adjust padding for smaller screens
-   
-        ul{
-          // float: none;
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            width: 100%;
-            margin-right: 0;
-            margin-top: 200px;
 
-            li{
-              padding: 0.5rem 3rem;
-              width: 20rem;
-              text-align: center;
-              // background: $teal;
-              margin-top: -1rem;
-            }
-        }
+    ul {
+      // float: none;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      margin-right: 0;
+      margin-top: 200px;
 
-       
-
+      li {
+        padding: 0.5rem 3rem;
+        width: 20rem;
+        text-align: center;
+        // background: $teal;
+        margin-top: -1rem;
+      }
+    }
   }
-
-
 
   .menuIcon {
     display: none;
-    
-  
+
     @media (max-width: 767px) {
       display: block; /* Show the icon only on screens up to 766px */
       position: fixed; /* Position the icon relative to the viewport */
       top: 20px; /* Adjust the top position */
       right: 20px; /* Adjust the right position */
       z-index: 1000; /* Ensure it's above other content */
-      
-  }
-
-  
+    }
   }
 
   .menuButton {
@@ -109,43 +99,27 @@ nav {
     cursor: pointer;
     display: flex;
     align-items: center;
-  
+
     &:hover .menuIcon {
       // Add hover effects here if needed
     }
   }
-  
-
- 
-  
 }
-
-
-
-
-
 
 // nav .menu
 // {
 // display: flex;
 
-// position: absolute; 
-// top: 0.75rem; 
+// position: absolute;
+// top: 0.75rem;
 // right: 0.5rem;
 // flex-direction: column;
 // justify-content: space-between;
 // width: 2.25rem;
 // height: 2rem;}
 // nav .menu span {
-// height: 0.4rem; 
+// height: 0.4rem;
 // width: 100%;
-// background-color: ■#fff; 
+// background-color: ■#fff;
 // border-radius: 0.2rem;
 // }
-
-
-
-
-
-
-

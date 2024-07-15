@@ -1,21 +1,77 @@
 import React from 'react';
 import './Service.scss'
+import linkedin from "/linkedin.png";
+import { motion } from "framer-motion";
+import frontend from "/FRONTEND.png";
+import cover from "/cover.png";
+import database from "/DATABASE.png";
+
+const serviceData = [
+  {
+      id: 1,
+      image: frontend,
+      title: "Front-End Development",
+      subtitle: "I have a solid background in front-end development and am skilled at building dependable, scalable applications. I have experience with tools including HTML/HTML5, CSS/Sass, JavaScript, and ReactJS Framework."
+  },
+  {
+      id: 2,
+      image: cover,
+      title: "Back-End Development",
+      subtitle: "My dedication focuses on creating dynamic web applications that fulfill your business requirements and improve your internet visibility. I have experience with tools including PHP Laravel, Java, Python, C++, C, and C#."
+  },
+  {
+      id: 3,
+      image: database,
+      title: "Database Management",
+      subtitle: "I am proficient in database management, with expertise in MySQL, R, and COBOL."
+  }
+];
 
 function Service() {
     return (
 
-        <section>
+        <div id='services'>
 
             
-        <div classname="service">
+<div className="service my-16 space-y-4">
+      <motion.h1 initial={{ opacity: 0, y: 100}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{type: "spring", stiffness: 150, damping: 10, delay: 0.2
 
-        <h1>SERVICES</h1>
+        }}>SERVICES</motion.h1>
+      <div className="grid-container">
+        {serviceData.map((service, index) => (
+          <div key={index} className="service-item">
+            <div className="img-container">
+              <img
+                src={service.image}
+                alt=""
+                className="img-shadow2 hover:scale-110 duration-300 cursor-pointer"
+              />
+            </div>
+            <div className="service-info space-y-2">
+              <motion.h2 
+              initial={{ opacity: 0, y: 100}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{type: "spring", stiffness: 150, damping: 10, delay: 0.1
 
-        </div>
+        }}
+              className="text-2xl font-bold text-primary">{service.title}</motion.h2>
+              <motion.h3 
+              initial={{ opacity: 0, scale:0.5}}
+        whileInView={{opacity: 1, scale:1}}
+        transition={{type: "spring", stiffness: 150, damping: 10, delay: 0.6
+
+        }}>{service.subtitle}</motion.h3>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
                 
 
 
-        </section>
+        </div>
     )
 
 

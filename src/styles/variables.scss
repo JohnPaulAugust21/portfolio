@@ -1,20 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
+$mobileSMax: 479px;
+$mobileMMin: 480px;
+$breakpoint-mobile: 767px;
+$mobileLMin: 768px;
+$mobileLMax: 991px;
+$tabletMin: 992px;
+$tabletMax: 1199px;
+$laptop: 1200px;
 
 // color palette
 
 // primary colors
-$white: #FFFFFF;
-$lightgrey: #F0F0F0;
+$white: #ffffff;
+$lightgrey: #f0f0f0;
 
 // accent colors
-$deepblue: #2C3E50;
+$deepblue: #2c3e50;
 $teal: #008080;
 
 // neutral colors
 $black: #000000;
-$darkgrey: #2F4F4F;
-
+$darkgrey: #2f4f4f;
+$darkgrey-rgba: rgba(44, 62, 80, 0.75);
+$darker-green-rgba: rgba(90, 138, 141, 0.89);
 
 // other colors
 $darkgrey90: rgba(44, 62, 80, 0.9);
@@ -23,28 +32,26 @@ $darkgrey90: rgba(44, 62, 80, 0.9);
 $size64: 64px;
 $size48: 48px;
 $size40: 40px;
-$size36: 36px;
-
+$size36: 36px; //Laptop HEADLINE
 $size32: 32px;
-$size24: 24px;
-$size20: 20px;
-$size16: 16px;
-
-$size14: 14px;
+$size30: 30px; //Tablet HEADLINE
+$size24: 24px; //Mobile L HEADLINE
+$size20: 20px; //Mobile M HEADLINE & LAPTOP PARAGRAPH
+$size18: 18px; //MOBILE S HEADLINE & MOBILE L PARAGRAPH & TABLET PARAGRAPH
+$size16: 16px; //MOBILE M PARAGRAPH
+$size14: 14px; //MOBILE S PARAGRAPH
 $size12: 12px;
-
-
 
 // typography
 
 // Headings - Montserrat Bold
-$heading-font-family: 'Montserrat', sans-serif;
+$heading-font-family: "Montserrat", sans-serif;
 $heading-font-weight: bold;
 
 // Body Text - Lato Regular
-$body-font-family: 'Lato', sans-serif;
+$body-font-family: "Lato", sans-serif;
 $body-font-weight: normal;
 
 // Accents - Raleway Light (for highlights or quotes)
-$accent-font-family: 'Raleway', sans-serif;
+$accent-font-family: "Raleway", sans-serif;
 $accent-font-weight: lighter;

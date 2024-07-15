@@ -1,0 +1,8 @@
+@import '../styles/variables';
+
+
+.footer{
+    margin-top: -60px;
+    background: linear-gradient(180deg, $darkgrey-rgba, $darker-green-rgba);
+    height: 300px; // Height of the grey background
+}

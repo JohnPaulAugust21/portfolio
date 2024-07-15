@@ -1,6 +1,6 @@
 @import '../styles/variables';
 
-.service {
+.project {
     margin: 4rem 0;
     .grid-container {
         margin-top: 100px;
@@ -18,8 +18,8 @@
     }
 
     margin-top: 0px;
-    background-color: $white; // Grey background color
-    height: 650px; // Height of the grey background
+    background-color: $lightgrey; // Grey background color
+    height: 850px; // Height of the grey background
 
     h1 {
         font-family: $heading-font-family;
@@ -29,7 +29,7 @@
         /* margin: 0; */
     }
   
-    .service-item {
+    .project-item {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -42,10 +42,8 @@
       }
   
       .img-shadow2 {
-        width: 200px; /* Fixed width */
-        height: 200px; /* Fixed height */
-        object-fit: cover; /* Ensure the image covers the area */
-        background-color: $lightgrey; // Background color instead of box-shadow
+        max-width: 150px; // Adjust this value to make the images smaller
+        background-color: $white; // Background color instead of box-shadow
         border-radius: 0px; // Optional: add border-radius for rounded corners
         overflow: hidden; // Optional: hide any overflow content
   
@@ -56,7 +54,7 @@
         }
       }
   
-      .service-info {
+      .project-info {
         margin-top: 1rem;
         display: flex;
         flex-direction: column;
@@ -65,13 +63,13 @@
         h2 {
           font-size: 1.5rem;
           font-weight: bold;
-          color: var(--primary-color);
+          color: $black;
         }
   
-        h3 {
-          font-size: 1.2rem;
-        }
+    
       }
     }
-  }
-  
+
+
+
+}
