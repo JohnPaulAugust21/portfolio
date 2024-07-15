@@ -16,7 +16,7 @@
 .profile {
   position: absolute;
   bottom: -120px;
-  left: 50%;
+  left: 40%;
   transform: translateX(-50%);
   width: 250px;
   height: 250px;
@@ -42,7 +42,7 @@
     width: 100px;
     height: 100px;
   }
-  @media only screen and  (min-width: $breakpoint-mobile) {
+  @media only screen and (min-width: $breakpoint-mobile) {
     bottom: -80px;
     width: 150px;
     height: 150px;
@@ -95,6 +95,8 @@
     font-family: $heading-font-family;
     color: $darkgrey;
   }
+
+
 
   img {
     margin-top: 30px;
@@ -234,10 +236,29 @@
     h2 {
       font-size: $size20;
     }
+    h3 {
+      font-size:  $size20;
+      margin-top: 10px;
+      font-family: $accent-font-family;
+      color: $darkgrey;
+      // font-weight: $accent-font-weight;
+    }
 
     img {
       width: 30px;
       margin-right: 15px;
+    }
+  }
+
+  .resume-icon {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 20px;
+
+    img {
+      width: 70px; /* Adjust size as needed */
+      height: auto;
+      display: block;
     }
   }
 }

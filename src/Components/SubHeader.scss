@@ -1,27 +1,53 @@
 @import "../styles/variables";
 
 .summary {
-  margin-top: 50px;
-  background-color: $darkgrey90;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 150px;
-
-  h2 {
-    font-size: $size24;
-    margin-top: 10px;
-    font-family: $body-font-family;
-    color: $white;
-    font-weight: $body-font-weight;
-    text-align: center;
-    margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0;
+  background-color: $lightgrey; /* Light Gray Background */
+  padding: 20px;
+  
+  .important {
+    color: #FF5733; /* Vibrant Red */
   }
 
+  .highlight {
+    color: #33FF57; /* Bright Green */
+  }
+
+  .vibrant {
+    color: #3357FF; /* Bold Blue */
+  }
+
+  .exciting {
+    color: #FF33A1; /* Hot Pink */
+  }
+
+  .bold {
+    color: #FFC300; /* Bright Yellow */
+  }
+
+  .colorful {
+    color: #FF33F6; /* Vivid Magenta */
+  }
+
+  .creative {
+    color: #00BFFF; /* Deep Sky Blue */
+  }
+
+  .stunning {
+    color: #FF4500; /* Orange Red */
+  }
+
+  .interactive {
+    color: #9400D3; /* Dark Violet */
+  }
+
+  .dynamic {
+    color: #FFD700; /* Gold */
+  }
   @media (min-width: $mobileSMax) {
-    margin-top: 30px;
-    padding: 50px;
 
     h2 {
       font-size: $size12;
@@ -29,8 +55,7 @@
   }
 
   @media (max-width: $mobileSMax) {
-    margin-top: 30px;
-    padding: 50px;
+
 
     h2 {
       font-size: $size12;
@@ -38,8 +63,7 @@
   }
 
   @media (min-width: $breakpoint-mobile) {
-    margin-top: 40px;
-    padding: 70px;
+
 
     h2 {
       font-size: $size14;
@@ -47,8 +71,7 @@
   }
 
   @media (min-width: $mobileMMin) and (max-width: $breakpoint-mobile) {
-    margin-top: 40px;
-    padding: 70px;
+
 
     h2 {
       font-size: $size14;
@@ -56,8 +79,6 @@
   }
 
   @media (min-width: $mobileLMax) {
-    margin-top: 50px;
-    padding: 100px;
 
     h2 {
       font-size: $size16;
@@ -65,8 +86,7 @@
   }
 
   @media (min-width: $mobileLMin) and (max-width: $mobileLMax) {
-    margin-top: 50px;
-    padding: 100px;
+
 
     h2 {
       font-size: $size16;
@@ -74,8 +94,6 @@
   }
 
   @media (min-width: $tabletMin) and (max-width: $tabletMax) {
-    margin-top: 60px;
-    padding: 120px;
 
     h2 {
       font-size: $size20;
@@ -83,11 +101,11 @@
   }
 
   @media (min-width: $laptop) {
-    margin-top: 70px;
-    padding: 150px;
+
 
     h2 {
       font-size: $size24;
     }
   }
 }
+

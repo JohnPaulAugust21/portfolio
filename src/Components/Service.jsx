@@ -1,6 +1,5 @@
 import React from "react";
 import "./Service.scss";
-import linkedin from "/linkedin.png";
 import { motion } from "framer-motion";
 import frontend from "/FRONTEND.png";
 import cover from "/cover.png";
@@ -11,22 +10,37 @@ const serviceData = [
     id: 1,
     image: frontend,
     title: "Front-End Development",
-    subtitle:
-      "I have a solid background in front-end development and am skilled at building dependable, scalable applications. I have experience with tools including HTML/HTML5, CSS/Sass, JavaScript, and ReactJS Framework.",
+    subtitle: (
+      <>
+        <span className="highlight">
+          HTML/HTML5, CSS/Sass, JavaScript, and ReactJS Framework.
+        </span>{" "}
+        <br />
+      </>
+    ),
   },
   {
     id: 2,
     image: cover,
     title: "Back-End Development",
-    subtitle:
-      "My dedication focuses on creating dynamic web applications that fulfill your business requirements and improve your internet visibility. I have experience with tools including PHP Laravel, Java, Python, C++, C, and C#.",
+    subtitle: (
+      <>
+        <span className="highlight">
+          PHP Laravel, Java, Python, C++, C, and C#.{" "}
+        </span>
+        <br />
+      </>
+    ),
   },
   {
     id: 3,
     image: database,
     title: "Database Management",
-    subtitle:
-      "I am proficient in database management, with expertise in MySQL, R, and COBOL.",
+    subtitle: (
+      <>
+        <span className="highlight">MySQL, R, and COBOL.</span> <br />
+      </>
+    ),
   },
 ];
 
