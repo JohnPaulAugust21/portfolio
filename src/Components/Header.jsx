@@ -57,7 +57,7 @@ function Header() {
         </motion.h2>
 
         <motion.a
-          href="resume.pdf"
+          href="https://drive.google.com/file/d/1OrgpkD19SVyhLc1ciDEu0QobkFBGplTq/view?usp=sharing"
           target="_blank"
           whileHover={{ scale: 1.2, rotate: 10 }}
           whileTap={{ scale: 0.8, rotate: -10 }}
