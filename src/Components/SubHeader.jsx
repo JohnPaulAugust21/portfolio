@@ -12,9 +12,8 @@ function SubHeader() {
     <motion.div initial="hidden" animate="visible" variants={textVariants}>
       <h2 class="summary" style={{ padding: "70px" }}>
         <motion.span
-          style={{ display: "inline-block", minWidth: "8px" }} // Adjust as needed
+          style={{ display: "inline-block", minWidth: "8px" }}
           initial={{ opacity: 0, y: 20 }}
-          // animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="important"
@@ -23,9 +22,8 @@ function SubHeader() {
         </motion.span>{" "}
         I'm{" "}
         <motion.span
-          style={{ display: "inline-block", minWidth: "8px" }} // Adjust as needed
+          style={{ display: "inline-block", minWidth: "8px" }}
           initial={{ opacity: 0, y: 20 }}
-          // animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="highlight"
@@ -34,9 +32,8 @@ function SubHeader() {
         </motion.span>
         , a web wizard with a passion for creating{" "}
         <motion.span
-          style={{ display: "inline-block", minWidth: "8px" }} // Adjust as needed
+          style={{ display: "inline-block", minWidth: "8px" }}
           initial={{ opacity: 0, y: 20 }}
-          // animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="vibrant"
@@ -45,9 +42,8 @@ function SubHeader() {
         </motion.span>
         . <br />I love turning{" "}
         <motion.span
-          style={{ display: "inline-block", minWidth: "8px" }} // Adjust as needed
+          style={{ display: "inline-block", minWidth: "8px" }}
           initial={{ opacity: 0, y: 20 }}
-          // animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="exciting"
@@ -56,9 +52,8 @@ function SubHeader() {
         </motion.span>{" "}
         into{" "}
         <motion.span
-          style={{ display: "inline-block", minWidth: "8px" }} // Adjust as needed
+          style={{ display: "inline-block", minWidth: "8px" }}
           initial={{ opacity: 0, y: 20 }}
-          // animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="bold"
@@ -67,7 +62,7 @@ function SubHeader() {
         </motion.span>{" "}
         that really{" "}
         <motion.span
-          style={{ display: "inline-block", minWidth: "8px" }} // Adjust as needed
+          style={{ display: "inline-block", minWidth: "8px" }}
           initial={{ opacity: 0, y: 20 }}
           // animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
@@ -79,9 +74,8 @@ function SubHeader() {
         ! <br />
         With my{" "}
         <motion.span
-          style={{ display: "inline-block", minWidth: "8px" }} // Adjust as needed
+          style={{ display: "inline-block", minWidth: "8px" }}
           initial={{ opacity: 0, y: 20 }}
-          // animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="creative"
@@ -90,9 +84,8 @@ function SubHeader() {
         </motion.span>
         , I'm all about making{" "}
         <motion.span
-          style={{ display: "inline-block", minWidth: "8px" }} // Adjust as needed
+          style={{ display: "inline-block", minWidth: "8px" }}
           initial={{ opacity: 0, y: 20 }}
-          // animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="stunning"
@@ -103,7 +96,6 @@ function SubHeader() {
         Whether it's{" "}
         <motion.span
           initial={{ opacity: 0, y: 20 }}
-          // animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="interactive"
@@ -113,7 +105,6 @@ function SubHeader() {
         or adding that{" "}
         <motion.span
           initial={{ opacity: 0, y: 20 }}
-          // animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.7 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="dynamic"
@@ -123,7 +114,6 @@ function SubHeader() {
         to projects, I'm here to make the web more{" "}
         <motion.span
           initial={{ opacity: 0, y: 20 }}
-          // animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.7 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="exciting"
@@ -133,7 +123,6 @@ function SubHeader() {
         and{" "}
         <motion.span
           initial={{ opacity: 0, y: 20 }}
-          // animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="colorful"
@@ -144,7 +133,6 @@ function SubHeader() {
         Let's build something{" "}
         <motion.span
           initial={{ opacity: 0, y: 20 }}
-          // animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="important"
@@ -155,12 +143,11 @@ function SubHeader() {
         By the way, my{" "}
         <motion.span
           initial={{ opacity: 0, y: 20 }}
-          // animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.9 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="highlight"
         >
-          RESUME
+          RESUME{" "}
         </motion.span>
         is above THIS, and my{" "}
         <motion.span
@@ -172,6 +159,14 @@ function SubHeader() {
           PROJECTS
         </motion.span>{" "}
         are below THIS—just click all of them to see!
+        <motion.span
+          initial={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.5, delay: 0.9 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="important"
+        >
+          {"             "} 💻 "code is my canvas, period." 🖌️
+        </motion.span>
       </h2>
     </motion.div>
   );

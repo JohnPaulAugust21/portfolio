@@ -77,7 +77,7 @@ function Header() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
         >
-          💻 "code is my canvas, period." 🖌️
+          johnpaulaugustmaldo@gmail.com
         </motion.h3>
       </div>
     </div>
