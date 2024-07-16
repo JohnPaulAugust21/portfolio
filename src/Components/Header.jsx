@@ -77,7 +77,7 @@ function Header() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
         >
-          💻 "code is canvas, period." 🖌️
+          💻 "code is my canvas, period." 🖌️
         </motion.h3>
       </div>
     </div>
