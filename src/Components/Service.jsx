@@ -64,10 +64,12 @@ function Service() {
           {serviceData.map((service, index) => (
             <div key={index} className="service-item">
               <div className="img-container">
-                <img
+                <motion.img
                   src={service.image}
                   alt=""
                   className="img-shadow2 hover:scale-110 duration-300 cursor-pointer"
+                  whileHover={{ scale: 1.1 }}
+             
                 />
               </div>
               <div className="service-info space-y-2">

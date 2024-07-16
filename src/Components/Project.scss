@@ -146,11 +146,11 @@
       border-radius: 0px; // Optional: add border-radius for rounded corners
       overflow: hidden; // Optional: hide any overflow content
 
-      transition: transform 0.3s ease;
+      // transition: transform 0.3s ease;
 
-      &:hover {
-        transform: scale(1.1);
-      }
+      // &:hover {
+      //   transform: scale(1.1);
+      // }
     }
 
     .project-info {

@@ -123,6 +123,17 @@
         object-fit: cover;
       }
     }
+    .fb {
+      // display: inline-block;
+      cursor: pointer;
+      margin-top: 0px;
+  
+      img {
+       
+        height: auto;
+        display: block;
+      }
+    }
   }
 }
 

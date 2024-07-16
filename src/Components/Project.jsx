@@ -58,10 +58,12 @@ const Project = () => {
             <div key={index} className="project-item">
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <div className="img-container">
-                  <img
+                  <motion.img
                     src={project.image}
                     alt={project.title}
                     className="img-shadow2 hover:scale-110 duration-300 cursor-pointer"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
                   />
                 </div>
               </a>
