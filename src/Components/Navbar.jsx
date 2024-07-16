@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
-import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
+// import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 import { Link } from "react-scroll";
 
 
@@ -66,7 +66,7 @@ function Navbar() {
       </li>
     </ul>
     <div>
-      <MenuRoundedIcon className="menuIcon" />
+      {/* <MenuRoundedIcon className="menuIcon" /> */}
     </div>
   </nav>
   );
