@@ -1,72 +1,83 @@
 @import "../styles/variables";
 
 #projects {
+
   padding-top: 50px;
-  @media (max-width: $mobileSMax) {
-    margin-top: 0px;
-    padding-top: 600px;
+  @media (min-width: 320px) and (max-width: 425px) {
+
+    padding-top: 0px;
+
+ 
   }
 
-  @media (min-width: $mobileMMin) and (max-width: $breakpoint-mobile) {
-    padding-top: 500px;
-    margin-top: 150px;
+
+  @media (min-width: 425px) and (max-width: 640px) {
+    height: auto;
+    padding-top: 0px;
+
   }
+
 
   @media (min-width: 640px) and (max-width: 766px) {
-    padding-top: 200px;
+    padding-top: 0px;
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
-    padding-top: 100px;
+    padding-top: 0px;
   }
 
-  @media (min-width: $mobileLMax) {
-    padding-top: 100px;
-    font-size: $size24;
+  @media (min-width: 991px) {
+    padding-top: 0px;
   }
 
-  @media (min-width: $mobileLMin) and (max-width: $mobileLMax) {
-    padding-top: 100px;
-    font-size: $size24;
-  }
+  // @media (min-width: $mobileLMax) {
+  //   padding-top: 100px;
+  //   font-size: $size24;
+  // }
 
-  @media (min-width: $tabletMin) and (max-width: $tabletMax) {
-    padding-top: 100px;
-    font-size: $size30;
-  }
+  // @media (min-width: $mobileLMin) and (max-width: $mobileLMax) {
+  //   padding-top: 100px;
+  //   font-size: $size24;
+  // }
 
-  @media (min-width: $laptop) {
-    padding-top: 50px;
-    font-size: $size36;
-  }
+  // @media (min-width: $tabletMin) and (max-width: $tabletMax) {
+  //   padding-top: 100px;
+  //   font-size: $size30;
+  // }
 
-  @media (min-width: $breakpoint-mobile) {
-    padding-top: 50px;
-    font-size: $size20;
-  }
+  // @media (min-width: $laptop) {
+  //   padding-top: 50px;
+  //   font-size: $size36;
+  // }
 
-  @media (min-width: $mobileLMax) {
-    padding-top: 100px;
-    font-size: $size24;
-  }
+  // @media (min-width: $breakpoint-mobile) {
+  //   padding-top: 50px;
+  //   font-size: $size20;
+  // }
 
-  @media (min-width: $mobileLMin) and (max-width: $mobileLMax) {
-    padding-top: 100px;
-    font-size: $size24;
-  }
+  // @media (min-width: $mobileLMax) {
+  //   padding-top: 100px;
+  //   font-size: $size24;
+  // }
 
-  @media (min-width: $tabletMin) and (max-width: $tabletMax) {
-    padding-top: 100px;
-    font-size: $size30;
-  }
+  // @media (min-width: $mobileLMin) and (max-width: $mobileLMax) {
+  //   padding-top: 100px;
+  //   font-size: $size24;
+  // }
 
-  @media (min-width: $laptop) {
-    padding-top: 50px;
-    font-size: $size36;
-  }
+  // @media (min-width: $tabletMin) and (max-width: $tabletMax) {
+  //   padding-top: 100px;
+  //   font-size: $size30;
+  // }
+
+  // @media (min-width: $laptop) {
+  //   padding-top: 0px;
+  //   font-size: $size36;
+  // }
 }
 
 .project {
+
   margin: 4rem 0;
   .grid-container {
     margin-top: 100px;
@@ -82,11 +93,11 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
-
+  height: auto;
   margin-top: 0px;
   background-color: $lightgrey; // Grey background color
-  height: 850px; // Height of the grey background
-
+ // Height of the grey background
+ padding-bottom: 20%;
   h1 {
     font-family: $heading-font-family;
     // font-size: $size64;

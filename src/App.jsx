@@ -5,6 +5,7 @@ import SubHeader from './Components/SubHeader';
 import Service from './Components/Service';
 import Project from './Components/Project';
 import Footer from './Components/Footer';
+import Skills from './Components/Skills';
 const App = () => {
   return (
     <div>
@@ -12,8 +13,10 @@ const App = () => {
       <Header />
       <SubHeader />
       <Service />
+      <Skills />
       <Project />
       <Footer />
+
     </div>
   );
 };

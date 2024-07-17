@@ -42,6 +42,42 @@ const serviceData = [
       </>
     ),
   },
+  {
+    id: 1,
+    image: frontend,
+    title: "Front-End Development",
+    subtitle: (
+      <>
+        <span className="highlight">
+          HTML/HTML5, CSS/Sass, JavaScript, and ReactJS Framework.
+        </span>{" "}
+        <br />
+      </>
+    ),
+  },
+  {
+    id: 2,
+    image: cover,
+    title: "Back-End Development",
+    subtitle: (
+      <>
+        <span className="highlight">
+          PHP Laravel, Java, Python, C++, C, and C#.{" "}
+        </span>
+        <br />
+      </>
+    ),
+  },
+  {
+    id: 3,
+    image: database,
+    title: "Database Management",
+    subtitle: (
+      <>
+        <span className="highlight">MySQL, R, and COBOL.</span> <br />
+      </>
+    ),
+  },
 ];
 
 function Service() {
@@ -86,7 +122,7 @@ function Service() {
                 >
                   {service.title}
                 </motion.h2>
-                <motion.h3
+                {/* <motion.h3
                   initial={{ opacity: 0, scale: 0.5 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{
@@ -97,7 +133,7 @@ function Service() {
                   }}
                 >
                   {service.subtitle}
-                </motion.h3>
+                </motion.h3> */}
               </div>
             </div>
           ))}

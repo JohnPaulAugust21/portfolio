@@ -6,7 +6,7 @@
   // Declarations moved above the nested rules
   margin-top: 0px;
   background-color: $white;
-  height: 550px;
+  height: auto;
 
   .grid-container {
     margin-top: 100px;
@@ -14,8 +14,10 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
 
-    @media (min-width: 640px) {
+    @media (min-width: 640px) and (max-width: 767px) {
       grid-template-columns: repeat(2, 1fr);
+      
+
     }
 
     @media (min-width: 768px) {

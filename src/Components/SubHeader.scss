@@ -49,65 +49,52 @@
   .dynamic {
     color: #FFD700; /* Gold */
   }
-  @media (min-width: $mobileSMax) {
-
-    h2 {
-      font-size: $size12;
-    }
-  }
-
-  @media (max-width: $mobileSMax) {
 
 
-    h2 {
-      font-size: $size12;
-    }
-  }
-
-  @media (min-width: $breakpoint-mobile) {
 
 
-    h2 {
-      font-size: $size14;
-    }
-  }
+  
 
-  @media (min-width: $mobileMMin) and (max-width: $breakpoint-mobile) {
+}
 
+@media (min-width: 320px) and (max-width: 425px) {
+  h2.summary {
 
-    h2 {
-      font-size: $size14;
-    }
-  }
-
-  @media (min-width: $mobileLMax) {
-
-    h2 {
-      font-size: $size16;
-    }
-  }
-
-  @media (min-width: $mobileLMin) and (max-width: $mobileLMax) {
-
-
-    h2 {
-      font-size: $size16;
-    }
-  }
-
-  @media (min-width: $tabletMin) and (max-width: $tabletMax) {
-
-    h2 {
-      font-size: $size20;
-    }
-  }
-
-  @media (min-width: $laptop) {
-
-
-    h2 {
-      font-size: $size24;
-    }
+      font-size: 14px;
+ 
   }
 }
 
+@media (min-width: 425px) and (max-width: 640px) {
+  h2.summary {
+
+    font-size: 16px;
+
+}
+
+  }
+
+
+  @media (min-width: 640px) and (max-width: 766px) {
+    h2.summary {
+
+      font-size: 18px;
+ 
+  }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    h2.summary {
+
+      font-size: 18px;
+ 
+  }
+  }
+
+  @media (min-width: 991px) {
+    h2.summary {
+
+      font-size: 20px;
+ 
+  }
+  }
