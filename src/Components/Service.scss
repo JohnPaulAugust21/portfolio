@@ -2,6 +2,12 @@
 
 .service {
   margin: 4rem 0;
+
+  // Declarations moved above the nested rules
+  margin-top: 0px;
+  background-color: $white;
+  height: 550px;
+
   .grid-container {
     margin-top: 100px;
     display: grid;
@@ -17,12 +23,10 @@
     }
   }
 
-  margin-top: 0px;
-  background-color: $white;
-  height: 550px;
-  @media (min-width: 320px) {
-    height: 550px;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
   }
+
   h1 {
     font-family: $heading-font-family;
     text-align: center;
@@ -94,6 +98,7 @@
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+
       .highlight {
         color: $teal;
         font-weight: bold;
@@ -103,29 +108,31 @@
         font-size: 1.5rem;
         font-weight: bold;
         color: var(--primary-color);
+
         @media (max-width: $mobileSMax) {
-          font-size: $size18;
+          font-size: $size14;
         }
 
         @media (min-width: $mobileMMin) and (max-width: $breakpoint-mobile) {
-          font-size: $size20;
+          font-size: $size16;
         }
 
         @media (min-width: $mobileLMin) and (max-width: $mobileLMax) {
-          font-size: $size24;
+          font-size: $size18;
         }
 
         @media (min-width: $tabletMin) and (max-width: $tabletMax) {
-          font-size: $size30;
+          font-size: $size18;
         }
 
         @media (min-width: $laptop) {
-          font-size: $size36;
+          font-size: $size20;
         }
       }
 
       h3 {
         font-size: 1.2rem;
+
         @media (max-width: $mobileSMax) {
           font-size: $size14;
         }
