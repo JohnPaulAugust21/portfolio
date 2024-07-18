@@ -6,7 +6,7 @@ function Header() {
   return (
     <div>
       <div className="cover">
-        <img src="/cover.png" alt="Cover Image" />
+        <img src="/cover.jpg" alt="Cover Image" />
 
         <motion.div
           id="home"

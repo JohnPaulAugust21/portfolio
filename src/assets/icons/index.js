@@ -26,7 +26,17 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
-
+import gitlab from './gitlab.svg'
+import docker from './docker.svg'
+import getbootstrap from './getbootstrap.svg'
+import java from './java.svg'
+import laravel from './laravel.svg'
+import mysql from './mysql.svg'
+import php from './php.svg'
+import phpmyadmin from './phpmyadmin.svg'
+import python from './python.svg'
+import rproject from './rproject.svg'
+import trello from './trello.svg'
 export {
     css,
     express,
@@ -55,5 +65,16 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    gitlab,
+    docker,
+    getbootstrap,
+    java,
+    laravel,
+    mysql,
+    php,
+    phpmyadmin,
+    python,
+    rproject,
+    trello,
 }

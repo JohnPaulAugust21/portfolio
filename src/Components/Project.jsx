@@ -3,7 +3,7 @@ import "./Project.scss";
 import sportscomplex from "/sports-logo.png";
 import phoneshop from "/phoneshop.png";
 import barbrandy from "/barbrandy.png";
-import todo from "/todo.png";
+import todo from "/todo.jpg";
 
 import { motion } from "framer-motion";
 const projectData = [

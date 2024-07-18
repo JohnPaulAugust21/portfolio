@@ -17,6 +17,17 @@ import {
   sass,
   tailwindcss,
   typescript,
+  gitlab,
+  docker,
+  getbootstrap,
+  java,
+  laravel,
+  mysql,
+  php,
+  phpmyadmin,
+  python,
+  rproject,
+  trello,
 } from "../assets/icons";
 const Skills = () => {
   const skills = [
@@ -52,16 +63,6 @@ const Skills = () => {
       type: "Database",
     },
 
-    // {
-    //   imageUrl: mui,
-    //   name: "Material-UI",
-    //   type: "Frontend",
-    // },
-    // {
-    //   imageUrl: nextjs,
-    //   name: "Next.js",
-    //   type: "Frontend",
-    // },
     {
       imageUrl: nodejs,
       name: "Node.js",
@@ -72,11 +73,7 @@ const Skills = () => {
       name: "React",
       type: "Frontend",
     },
-    // {
-    //   imageUrl: redux,
-    //   name: "Redux",
-    //   type: "State Management",
-    // },
+
     {
       imageUrl: sass,
       name: "Sass",
@@ -87,12 +84,67 @@ const Skills = () => {
       name: "Tailwind CSS",
       type: "Frontend",
     },
-    // {
-    //   imageUrl: typescript,
-    //   name: "TypeScript",
-    //   type: "Frontend",
-    // },
-   
+
+    {
+      imageUrl: gitlab,
+      name: "GitLab",
+      type: "Version Control",
+    },
+
+    {
+      imageUrl: docker,
+      name: "Docker",
+      type: "Backend",
+    },
+    {
+      imageUrl: getbootstrap,
+      name: "Bootstrap",
+      type: "Bootstrap",
+    },
+    {
+      imageUrl: java,
+      name: "Java",
+      type: "Version Control",
+    },
+
+    {
+      imageUrl: laravel,
+      name: "GitLab",
+      type: "Version Control",
+    },
+
+    {
+      imageUrl: mysql,
+      name: "MySQL",
+      type: "Database",
+    },
+    {
+      imageUrl: php,
+      name: "PHP",
+      type: "Backend",
+    },
+    {
+      imageUrl: phpmyadmin,
+      name: "PHPMyAdmin",
+      type: "Backend",
+    },
+    {
+      imageUrl: python,
+      name: "Python",
+      type: "Backend",
+    },
+
+    {
+      imageUrl: rproject,
+      name: "R",
+      type: "Backend",
+    },
+
+    {
+      imageUrl: trello,
+      name: "Trello",
+      type: "Project Management",
+    },
   ];
   return (
     <div id="skills">

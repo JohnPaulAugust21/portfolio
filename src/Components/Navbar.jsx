@@ -42,6 +42,19 @@ function Navbar() {
         <Link
           className="nav-link"
           activeClass="active"
+          to="skills"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          skills
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="nav-link"
+          activeClass="active"
           to="projects"
           spy={true}
           smooth={true}

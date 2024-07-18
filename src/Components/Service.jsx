@@ -1,9 +1,9 @@
 import React from "react";
 import "./Service.scss";
 import { motion } from "framer-motion";
-import frontend from "/FRONTEND.png";
-import cover from "/cover.png";
-import database from "/DATABASE.png";
+import frontend from "/FRONTEND.jpg";
+import cover from "/covers .jpg";
+import database from "/DATABASE.jpg";
 
 const serviceData = [
   {
@@ -42,42 +42,7 @@ const serviceData = [
       </>
     ),
   },
-  {
-    id: 1,
-    image: frontend,
-    title: "Front-End Development",
-    subtitle: (
-      <>
-        <span className="highlight">
-          HTML/HTML5, CSS/Sass, JavaScript, and ReactJS Framework.
-        </span>{" "}
-        <br />
-      </>
-    ),
-  },
-  {
-    id: 2,
-    image: cover,
-    title: "Back-End Development",
-    subtitle: (
-      <>
-        <span className="highlight">
-          PHP Laravel, Java, Python, C++, C, and C#.{" "}
-        </span>
-        <br />
-      </>
-    ),
-  },
-  {
-    id: 3,
-    image: database,
-    title: "Database Management",
-    subtitle: (
-      <>
-        <span className="highlight">MySQL, R, and COBOL.</span> <br />
-      </>
-    ),
-  },
+
 ];
 
 function Service() {
