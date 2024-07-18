@@ -33,33 +33,33 @@
   // }
 }
 
-.project {
-  h1 {
-    font-family: $heading-font-family;
-    padding-top: 100px;
-    text-align: center;
+h1 {
+  font-family: $heading-font-family;
+  padding-top: 100px;
+  text-align: center;
 
-    @media (min-width: 320px) and (max-width: 425px) {
-      padding-top: 500px;
-      font-size: $size18;
-    }
-
-    @media (min-width: 425px) and (max-width: 640px) {
-      padding-top: 1100px;
-      font-size: $size20;
-    }
-
-    @media (min-width: 640px) and (max-width: 767px) {
-      padding-top: 50px;
-      font-size: $size20;
-    }
-
-    @media (min-width: 767px) and (max-width: 1199px) {
-      padding-top: 100px;
-      font-size: $size24;
-    }
+  @media (min-width: 320px) and (max-width: 425px) {
+    padding-top: 500px;
+    font-size: $size18;
   }
 
+  @media (min-width: 425px) and (max-width: 640px) {
+    padding-top: 1100px;
+    font-size: $size20;
+  }
+
+  @media (min-width: 640px) and (max-width: 767px) {
+    padding-top: 50px;
+    font-size: $size20;
+  }
+
+  @media (min-width: 767px) and (max-width: 1199px) {
+    padding-top: 100px;
+    font-size: $size24;
+  }
+}
+
+.project {
   margin: 4rem 0;
 
   height: auto;
