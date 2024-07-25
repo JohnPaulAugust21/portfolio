@@ -40,7 +40,7 @@ function SubHeader() {
         >
           awesome digital stuff
         </motion.span>
-        . <br />I love turning{" "}
+        . <br />Adaptability and{" "}
         <motion.span
           style={{ display: "inline-block", minWidth: "8px" }}
           initial={{ opacity: 0, y: 20 }}
@@ -48,9 +48,9 @@ function SubHeader() {
           whileInView={{ opacity: 1, y: 0 }}
           className="exciting"
         >
-          ideas
-        </motion.span>{" "}
-        into{" "}
+          performance-driven
+        </motion.span>
+        ,{" "}
         <motion.span
           style={{ display: "inline-block", minWidth: "8px" }}
           initial={{ opacity: 0, y: 20 }}
@@ -58,9 +58,9 @@ function SubHeader() {
           whileInView={{ opacity: 1, y: 0 }}
           className="bold"
         >
-          websites
+          excellent
         </motion.span>{" "}
-        that really{" "}
+        at applying technical skills <br />to provide high-quality results{" "}
         <motion.span
           style={{ display: "inline-block", minWidth: "8px" }}
           initial={{ opacity: 0, y: 20 }}
@@ -69,10 +69,10 @@ function SubHeader() {
           whileInView={{ opacity: 1, y: 0 }}
           className="colorful"
         >
-          pop
+          efficiently
         </motion.span>
-        ! <br />
-        With my{" "}
+        . <br />
+        Strong{" "}
         <motion.span
           style={{ display: "inline-block", minWidth: "8px" }}
           initial={{ opacity: 0, y: 20 }}
@@ -80,9 +80,9 @@ function SubHeader() {
           whileInView={{ opacity: 1, y: 0 }}
           className="creative"
         >
-          IT background
-        </motion.span>
-        , I'm all about making{" "}
+          organizational skills
+        </motion.span>{" "}
+        and enthusiasm for learning new skills and{" "}
         <motion.span
           style={{ display: "inline-block", minWidth: "8px" }}
           initial={{ opacity: 0, y: 20 }}
@@ -90,56 +90,57 @@ function SubHeader() {
           whileInView={{ opacity: 1, y: 0 }}
           className="stunning"
         >
-          user-friendly designs
-        </motion.span>{" "}
-        that stand out. <br />
-        Whether it's{" "}
+          technologies
+        </motion.span>
+        , <br />
+        along with taking on{" "}
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.6 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="interactive"
         >
-          coding solutions
-        </motion.span>{" "}
-        or adding that{" "}
+          new responsibilities
+        </motion.span>
+        , ensure{" "}<br />
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.7 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="dynamic"
         >
-          special touch
+          consistent
         </motion.span>{" "}
-        to projects, I'm here to make the web more{" "}
+        accomplishment and exceeding of<br />
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.7 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="exciting"
         >
-          fun
+          project objectives
         </motion.span>{" "}
-        and{" "}
+        to{" "}
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.8 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="colorful"
         >
-          interactive
+          improve{" "}
         </motion.span>
-        . <br />
-        Let's build something{" "}
+   
+        customer{" "}
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.8 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="important"
         >
-          amazing
-        </motion.span>{" "}
-        together! <br />
+          experience
+        </motion.span>
+    
+        . <br />
         By the way, my{" "}
         <motion.span
           initial={{ opacity: 0, y: 20 }}
@@ -158,14 +159,14 @@ function SubHeader() {
         >
           PROJECTS
         </motion.span>{" "}
-        are below THIS—just click all of them to see!
+        are below THIS—<br />just click all of them to see!
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.9 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="important"
         >
-          {"             "} 💻 "code is my canvas, period." 🖌️
+          {"             "} <br />💻 "code is my canvas, period." 🖌️
         </motion.span>
       </h2>
     </motion.div>
