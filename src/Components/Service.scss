@@ -3,12 +3,13 @@
 .service {
   margin: 4rem 0;
 
-  // Declarations moved above the nested rules
+
   margin-top: 0px;
   background-color: $white;
   height: auto;
 
   .grid-container {
+    margin-bottom: 150px;
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -79,20 +80,34 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
 
     .img-container {
       display: flex;
       justify-content: center;
       width: 100%;
+      
     }
 
     .img-shadow2 {
-      width: 200px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
       object-fit: cover;
-      background-color: $lightgrey;
-      border-radius: 0px;
+      // background-color: $lightgrey;
+      border-radius:0px;
       overflow: hidden;
+      border: 40px solid $lightgrey;
+      @media (min-width: 320px) and (max-width: 425px) {
+        width: 150px;
+        height: 150px;
+     
+      }
+      @media (min-width: 767px) and (max-width: 991px) {
+        width: 220px;
+        height: 220px;
+      }
+
+
     }
 
     .service-info {
