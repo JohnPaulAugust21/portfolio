@@ -9,7 +9,7 @@ const Header = () => {
   const [showNotification, setShowNotification] = useState(false);
 
   const copyToClipboard = () => {
-    navigator.clipboard.writeText("johnpaulaugustmaldo@gmail.com").then(() => {
+    navigator.clipboard.writeText("work.johnpaulaugustbmaldo@gmail.com").then(() => {
       setShowNotification(true);
       setTimeout(() => {
         setShowNotification(false);
