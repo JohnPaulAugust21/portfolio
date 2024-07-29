@@ -51,7 +51,7 @@ const Header = () => {
             and <span style={{ textAlign: "left" }}>designer.</span>
           </motion.h1>
           <a
-            href="https://drive.google.com/file/d/114o2ivKdL1mfMhtgbPSE3MTYMoWWNWxO/view?usp=sharing"
+            href="https://drive.google.com/file/d/1d_dn418_iVcJtQZbflhNoDe_UAT9NocP/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
           >
